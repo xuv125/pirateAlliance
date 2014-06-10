@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.objectFactory.spring.useClassCache"
+		value="true" />
+	<constant name="struts.freemarker.templatesCache" value="true" />
+	<constant name="struts.freemarker.beanwrapperCache" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.server.static.browserCache" value="false" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.locale" value="jp" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.multipart.maxSize" value="99999999999999" />
+
+	<package name="web-package" extends="struts-default" abstract="true">
+		<interceptors>
+			<interceptor name="sysInterceptor"
+				class="jp.co.piratealliance.pirateAllianceWeb.web.interceptor.SysInterceptor" />
+			<interceptor-stack name="sysStack">
+				<interceptor-ref name="sysInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sysStack"></default-interceptor-ref>
+		<global-results>
+			<result name="SysError">/view/common/error.jsp</result>
+		</global-results>
+	</package>
+
+	<package name="json-package" extends="json-default">
+		<interceptors>
+			<interceptor name="sysInterceptor"
+				class="jp.co.piratealliance.pirateAllianceWeb.web.interceptor.SysInterceptor" />
+			<interceptor-stack name="sysStack">
+				<interceptor-ref name="sysInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="sysStack"></default-interceptor-ref>
+	</package>
+
+	<!-- test -->
+	<include
+		file="jp/co/piratealliance/pirateAllianceWeb/struts/test/JsonTestAction_struts.xml"></include>
+</struts>
