@@ -39,7 +39,7 @@ public class SysInterceptor extends AbstractInterceptor
 			// エラーログ設定
 			ErrorLogger.log(ex, mc, entryClassName, message);
 
-			result = "atomSysError";
+			result = "SysError";
 		}
 		finally
 		{

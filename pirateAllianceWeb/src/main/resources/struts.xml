@@ -42,6 +42,9 @@
 			</interceptor-stack>
 		</interceptors>
 		<default-interceptor-ref name="sysStack"></default-interceptor-ref>
+		<global-results>
+			<result name="SysError">/view/common/error.jsp</result>
+		</global-results>
 	</package>
 
 	<!-- test -->

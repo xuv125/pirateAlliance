@@ -3,4 +3,10 @@
 
 
 <beans default-autowire="byName">
+	<!-- コードリスト取得Service-->
+	<bean id="jsonTestService" class="jp.co.piratealliance.pirateAllianceWeb.service.test.impl.JsonTestServiceImpl">
+		<property name="jsonTestDao">
+			<ref bean="jsonTestDao"/>
+		</property>
+	</bean>
 </beans>

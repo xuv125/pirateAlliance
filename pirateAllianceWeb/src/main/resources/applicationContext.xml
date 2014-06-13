@@ -44,7 +44,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:mybatis.xml" />
 		<property name="mapperLocations"
-			value="classpath*:jp/co/asahi_np/biz/bbs/**/*Dao.xml" />
+			value="classpath*:jp/co/piratealliance/pirateAllianceWeb/sql/**/*Dao.xml" />
 	</bean>
 
 	<bean id="transactionManager"
@@ -67,12 +67,10 @@
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods" />
 	</aop:config>
 
-	<!-- action -->
-	<import
-		resource="jp/co/piratealliance/pirateAllianceWeb/spring/action_spring.xml" />
-	<!-- service -->
-	<import
-		resource="jp/co/piratealliance/pirateAllianceWeb/spring/service_spring.xml" />
 	<!-- dao -->
 	<import resource="jp/co/piratealliance/pirateAllianceWeb/spring/dao_spring.xml" />
+	<!-- service -->
+	<import resource="jp/co/piratealliance/pirateAllianceWeb/spring/service_spring.xml" />
+	<!-- action -->
+	<import resource="jp/co/piratealliance/pirateAllianceWeb/spring/action_spring.xml" />
 </beans>

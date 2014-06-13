@@ -3,5 +3,10 @@
 
 
 <beans default-autowire="byName">
-	<bean id="jsonTestAction" class="jp.co.piratealliance.pirateAllianceWeb.web.action.test.JsonTestAction"></bean>
+	<bean id="jsonTestAction"
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.test.JsonTestAction">
+		<property name="jsonTestService">
+			<ref bean="jsonTestService" />
+		</property>
+	</bean>
 </beans>
