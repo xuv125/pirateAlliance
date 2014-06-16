@@ -15,8 +15,7 @@
 	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
 		<param name="Target" value="System.out" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern"
-				value="%d{yyyy-MM-dd|HH:mm:ss}|%p|hon|app|%c|%t|%m%n" />
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss}|%p|hon|app|%c|%t|%m%n" />
 		</layout>
 	</appender>
 
@@ -26,8 +25,7 @@
 		<param name="Encoding" value="UTF-8" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern"
-				value="%d{yyyy-MM-dd|HH:mm:ss}|%p|hon|app|%c|%t|%m%n" />
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss}|%p|hon|app|%c|%t|%m%n" />
 		</layout>
 	</appender>
 
@@ -57,6 +55,11 @@
 		<appender-ref ref="STDOUT" />
 	</category>
 
+	<logger name="jp.co.piratealliance.pirateAllianceWeb.dao">
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+
 	<category name="sys.error">
 		<priority value="DEBUG" />
 		<appender-ref ref="error" />
@@ -70,7 +73,7 @@
 	</category>
 
 	<root>
-		<priority value="INFO" />
+		<priority value="DEBUG" />
 	</root>
 
 </log4j:configuration>

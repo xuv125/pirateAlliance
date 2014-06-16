@@ -10,7 +10,25 @@ public class JsonTestDto
     private String key2;
     private String test1;
     private String test2;
-    /**
+    private String id;
+    private String name;
+    public String getId()
+	{
+		return id;
+	}
+	public void setId(String id)
+	{
+		this.id = id;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	/**
      * @return the key1
      */
     public String getKey1()

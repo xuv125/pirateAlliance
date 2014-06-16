@@ -1,6 +1,8 @@
 package jp.co.piratealliance.pirateAllianceWeb.service.test.impl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import jp.co.piratealliance.pirateAllianceWeb.dao.test.JsonTestDao;
 import jp.co.piratealliance.pirateAllianceWeb.dto.test.JsonTestDto;
@@ -18,7 +20,9 @@ public class JsonTestServiceImpl implements JsonTestService
 
 	public List<JsonTestDto> getJsonTestDtoList()
 	{
-		return jsonTestDao.selectTest();
+		Map<String,Object> paramMap = new HashMap<String,Object>();
+		paramMap.put("name", "xuv");
+		return jsonTestDao.selectTest(paramMap);
 	}
 
 	public JsonTestDao getJsonTestDao()

@@ -16,7 +16,7 @@ public class Constants
     public static final String LOG_PACKAGE_SQLPERFORMANCE = "sys.sql_pf";
 
 	/** エラー詳細ログパッケージ名. */
-	public static final String LOG_PACKAGE_ERROR_DETAIL = "sys.error_detail";
+	public static final String LOG_PACKAGE_ERROR_DETAIL = "sys.error";
 
 	/** 画面操作ログパッケージ名. */
 	public static final String LOG_PACKAGE_DISP_OP = "sys.disp_op";

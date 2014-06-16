@@ -1,6 +1,7 @@
 package jp.co.piratealliance.pirateAllianceWeb.dao.test;
 
 import java.util.List;
+import java.util.Map;
 
 import jp.co.piratealliance.pirateAllianceWeb.dto.test.JsonTestDto;
 
@@ -11,5 +12,5 @@ import jp.co.piratealliance.pirateAllianceWeb.dto.test.JsonTestDto;
  */
 public interface JsonTestDao
 {
-	public List<JsonTestDto> selectTest();
+	public List<JsonTestDto> selectTest(Map<String,Object> paramMap);
 }

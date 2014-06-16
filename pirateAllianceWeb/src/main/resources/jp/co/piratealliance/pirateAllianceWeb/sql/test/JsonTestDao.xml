@@ -4,10 +4,11 @@
 
 <mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.test.JsonTestDao">
 
-	<select id="selectTest" >
+	<select id="selectTest" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.test.JsonTestDto">
 		<![CDATA[
 		SELECT *
 		FROM   first
+		where  name = #{name}
 		]]>
 	</select>
 </mapper>
