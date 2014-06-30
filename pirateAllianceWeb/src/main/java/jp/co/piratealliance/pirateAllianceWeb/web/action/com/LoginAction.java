@@ -14,12 +14,16 @@ public class LoginAction extends BaseAction {
 	private UserService userService;
 
 	private UserInfoDto userInfoDto;
+	
+	private String email;
+	
+	private String password;
 
-	public String output()
+	public String userLogin()
 	{
-		String email = "xing_lun@hotmail.com";
-		String password = "12345678";
-		userInfoDto = userService.getUserInfo(email, password);
+//		String email = "xing_lun@hotmail.com";
+//		String password = "12345678";
+		userInfoDto = userService.getUserInfo(this.email, this.password);
 		return SUCCESS;
 	}
 
@@ -49,6 +53,34 @@ public class LoginAction extends BaseAction {
 	 */
 	public void setUserInfoDto(UserInfoDto userInfoDto) {
 		this.userInfoDto = userInfoDto;
+	}
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	

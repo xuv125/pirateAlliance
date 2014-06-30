@@ -24,7 +24,7 @@
 	</bean>
 
 	<!-- ユーザー認証Action -->
-	<bean id="login"
+	<bean id="loginAction"
 		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.LoginAction"
 		scope="prototype">
 		<property name="userService">
