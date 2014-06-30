@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
-
-<beans default-autowire="byName">
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"
+	default-autowire="byName">
 	<bean id="jsonTestAction"
-		class="jp.co.piratealliance.pirateAllianceWeb.web.action.test.JsonTestAction">
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.test.JsonTestAction"
+		scope="prototype">
 		<property name="jsonTestService">
 			<ref bean="jsonTestService" />
 		</property>
 	</bean>
-	
-	<!-- ユーザー認証Action-->
+
+	<!-- ユーザー認証Action -->
 	<bean id="login"
-		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.LoginAction">
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.LoginAction"
+		scope="prototype">
 		<property name="userService">
 			<ref bean="userService" />
 		</property>
