@@ -48,6 +48,8 @@
 	</package>
 
 	<!-- test -->
-	<include
-		file="jp/co/piratealliance/pirateAllianceWeb/struts/test/JsonTestAction_struts.xml"></include>
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/test/JsonTestAction_struts.xml"></include>
+	
+	<!-- ユーザー認証 -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/LoginAction_struts.xml"/>
 </struts>

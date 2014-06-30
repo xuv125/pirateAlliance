@@ -9,4 +9,11 @@
 			<ref bean="jsonTestDao"/>
 		</property>
 	</bean>
+
+	<!-- ユーザー情報を取るService-->
+	<bean id="userService" class="jp.co.piratealliance.pirateAllianceWeb.service.com.impl.UserServiceImpl">
+		<property name="userDao">
+			<ref bean="userDao"/>
+		</property>
+	</bean>
 </beans>

@@ -9,4 +9,12 @@
 			<ref bean="jsonTestService" />
 		</property>
 	</bean>
+	
+	<!-- ユーザー認証Action-->
+	<bean id="login"
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.LoginAction">
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
+	</bean>
 </beans>
