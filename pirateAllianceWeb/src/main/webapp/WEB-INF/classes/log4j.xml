@@ -20,7 +20,7 @@
 	</appender>
 
 	<appender name="debug" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/var/pirateAlliance/Debug/debug.log" />
+		<param name="File" value="/Users/xinglun/work/log/pirateAlliance/Debug/debug.log" />
 		<param name="Append" value="true" />
 		<param name="Encoding" value="UTF-8" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
@@ -30,7 +30,7 @@
 	</appender>
 
 	<appender name="error" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/var/pirateAlliance/Error/error.log" />
+		<param name="File" value="/Users/xinglun/work/log/pirateAlliance/Error/error.log" />
 		<param name="Append" value="true" />
 		<param name="Encoding" value="UTF-8" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
@@ -40,7 +40,7 @@
 	</appender>
 
 	<appender name="disp_op" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="/var/pirateAlliance/disp_op.log" />
+		<param name="File" value="/Users/xinglun/work/log/pirateAlliance/disp_op.log" />
 		<param name="Append" value="true" />
 		<param name="Encoding" value="UTF-8" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
