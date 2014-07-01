@@ -7,373 +7,373 @@ package jp.co.piratealliance.pirateAllianceWeb.dto.com;
 
 public class UserInfoDto {
 
-	private String USER_ID;
+	private String user_id;
 	
-	private String SHOP_ID;
+	private String shop_id;
 	
-	private int GOLDEN_COIN_ID;
+	private int golden_coin_id;
 	
-	private int SILVER_COIN_ID;
+	private int silver_coin_id;
 	
-	private String ACCOUNT_ID;
+	private String account_id;
 	
-	private String NAME_KANJI_SEI;
+	private String name_kanji_sei;
 	
-	private String NAME_KANJI_MEI;
+	private String name_kanji_mei;
 	
-	private String NAME_KATAKANA_SEI;
+	private String name_katakana_sei;
 	
-	private String NAME_KATAKANA_MEI;
+	private String name_katakana_mei;
 	
-	private String NAME_EN_FAMILY;
+	private String name_en_family;
 	
-	private String NAME_EN_MIDDLE;
+	private String name_en_middle;
 	
-	private String NAME_EN_LAST;
+	private String name_en_last;
 	
-	private String EMAIL;
+	private String email;
 	
-	private String TEL;
+	private String tel;
 	
-	private String PASSWORD;
+	private String password;
 	
-	private int STATUS;
+	private int status;
 	
-	private String CREATE_TIME;
+	private String create_time;
 	
-	private String LOGIN_TIME;
+	private String login_time;
 	
-	private String LAST_LOGIN_TIME;
+	private String last_login_time;
 	
-	private String UPDATE_TIME;
+	private String update_time;
 	
-	private int LOGIN_COUNT;
+	private int login_count;
 
-	private int GOLDEN_COIN;
+	private int golden_coin;
 	
-	private int SILVER_COIN;
+	private int silver_coin;
 
 	/**
-	 * @return the uSER_ID
+	 * @return the user_id
 	 */
-	public String getUSER_ID() {
-		return USER_ID;
+	public String getUser_id() {
+		return user_id;
 	}
 
 	/**
-	 * @param uSER_ID the uSER_ID to set
+	 * @param user_id the user_id to set
 	 */
-	public void setUSER_ID(String uSER_ID) {
-		USER_ID = uSER_ID;
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
 
 	/**
-	 * @return the sHOP_ID
+	 * @return the shop_id
 	 */
-	public String getSHOP_ID() {
-		return SHOP_ID;
+	public String getShop_id() {
+		return shop_id;
 	}
 
 	/**
-	 * @param sHOP_ID the sHOP_ID to set
+	 * @param shop_id the shop_id to set
 	 */
-	public void setSHOP_ID(String sHOP_ID) {
-		SHOP_ID = sHOP_ID;
+	public void setShop_id(String shop_id) {
+		this.shop_id = shop_id;
 	}
 
 	/**
-	 * @return the gOLDEN_COIN_ID
+	 * @return the golden_coin_id
 	 */
-	public int getGOLDEN_COIN_ID() {
-		return GOLDEN_COIN_ID;
+	public int getGolden_coin_id() {
+		return golden_coin_id;
 	}
 
 	/**
-	 * @param gOLDEN_COIN_ID the gOLDEN_COIN_ID to set
+	 * @param golden_coin_id the golden_coin_id to set
 	 */
-	public void setGOLDEN_COIN_ID(int gOLDEN_COIN_ID) {
-		GOLDEN_COIN_ID = gOLDEN_COIN_ID;
+	public void setGolden_coin_id(int golden_coin_id) {
+		this.golden_coin_id = golden_coin_id;
 	}
 
 	/**
-	 * @return the sILVER_COIN_ID
+	 * @return the silver_coin_id
 	 */
-	public int getSILVER_COIN_ID() {
-		return SILVER_COIN_ID;
+	public int getSilver_coin_id() {
+		return silver_coin_id;
 	}
 
 	/**
-	 * @param sILVER_COIN_ID the sILVER_COIN_ID to set
+	 * @param silver_coin_id the silver_coin_id to set
 	 */
-	public void setSILVER_COIN_ID(int sILVER_COIN_ID) {
-		SILVER_COIN_ID = sILVER_COIN_ID;
+	public void setSilver_coin_id(int silver_coin_id) {
+		this.silver_coin_id = silver_coin_id;
 	}
 
 	/**
-	 * @return the aCCOUNT_ID
+	 * @return the account_id
 	 */
-	public String getACCOUNT_ID() {
-		return ACCOUNT_ID;
+	public String getAccount_id() {
+		return account_id;
 	}
 
 	/**
-	 * @param aCCOUNT_ID the aCCOUNT_ID to set
+	 * @param account_id the account_id to set
 	 */
-	public void setACCOUNT_ID(String aCCOUNT_ID) {
-		ACCOUNT_ID = aCCOUNT_ID;
+	public void setAccount_id(String account_id) {
+		this.account_id = account_id;
 	}
 
 	/**
-	 * @return the nAME_KANJI_SEI
+	 * @return the name_kanji_sei
 	 */
-	public String getNAME_KANJI_SEI() {
-		return NAME_KANJI_SEI;
+	public String getName_kanji_sei() {
+		return name_kanji_sei;
 	}
 
 	/**
-	 * @param nAME_KANJI_SEI the nAME_KANJI_SEI to set
+	 * @param name_kanji_sei the name_kanji_sei to set
 	 */
-	public void setNAME_KANJI_SEI(String nAME_KANJI_SEI) {
-		NAME_KANJI_SEI = nAME_KANJI_SEI;
+	public void setName_kanji_sei(String name_kanji_sei) {
+		this.name_kanji_sei = name_kanji_sei;
 	}
 
 	/**
-	 * @return the nAME_KANJI_MEI
+	 * @return the name_kanji_mei
 	 */
-	public String getNAME_KANJI_MEI() {
-		return NAME_KANJI_MEI;
+	public String getName_kanji_mei() {
+		return name_kanji_mei;
 	}
 
 	/**
-	 * @param nAME_KANJI_MEI the nAME_KANJI_MEI to set
+	 * @param name_kanji_mei the name_kanji_mei to set
 	 */
-	public void setNAME_KANJI_MEI(String nAME_KANJI_MEI) {
-		NAME_KANJI_MEI = nAME_KANJI_MEI;
+	public void setName_kanji_mei(String name_kanji_mei) {
+		this.name_kanji_mei = name_kanji_mei;
 	}
 
 	/**
-	 * @return the nAME_KATAKANA_SEI
+	 * @return the name_katakana_sei
 	 */
-	public String getNAME_KATAKANA_SEI() {
-		return NAME_KATAKANA_SEI;
+	public String getName_katakana_sei() {
+		return name_katakana_sei;
 	}
 
 	/**
-	 * @param nAME_KATAKANA_SEI the nAME_KATAKANA_SEI to set
+	 * @param name_katakana_sei the name_katakana_sei to set
 	 */
-	public void setNAME_KATAKANA_SEI(String nAME_KATAKANA_SEI) {
-		NAME_KATAKANA_SEI = nAME_KATAKANA_SEI;
+	public void setName_katakana_sei(String name_katakana_sei) {
+		this.name_katakana_sei = name_katakana_sei;
 	}
 
 	/**
-	 * @return the nAME_KATAKANA_MEI
+	 * @return the name_katakana_mei
 	 */
-	public String getNAME_KATAKANA_MEI() {
-		return NAME_KATAKANA_MEI;
+	public String getName_katakana_mei() {
+		return name_katakana_mei;
 	}
 
 	/**
-	 * @param nAME_KATAKANA_MEI the nAME_KATAKANA_MEI to set
+	 * @param name_katakana_mei the name_katakana_mei to set
 	 */
-	public void setNAME_KATAKANA_MEI(String nAME_KATAKANA_MEI) {
-		NAME_KATAKANA_MEI = nAME_KATAKANA_MEI;
+	public void setName_katakana_mei(String name_katakana_mei) {
+		this.name_katakana_mei = name_katakana_mei;
 	}
 
 	/**
-	 * @return the nAME_EN_FAMILY
+	 * @return the name_en_family
 	 */
-	public String getNAME_EN_FAMILY() {
-		return NAME_EN_FAMILY;
+	public String getName_en_family() {
+		return name_en_family;
 	}
 
 	/**
-	 * @param nAME_EN_FAMILY the nAME_EN_FAMILY to set
+	 * @param name_en_family the name_en_family to set
 	 */
-	public void setNAME_EN_FAMILY(String nAME_EN_FAMILY) {
-		NAME_EN_FAMILY = nAME_EN_FAMILY;
+	public void setName_en_family(String name_en_family) {
+		this.name_en_family = name_en_family;
 	}
 
 	/**
-	 * @return the nAME_EN_MIDDLE
+	 * @return the name_en_middle
 	 */
-	public String getNAME_EN_MIDDLE() {
-		return NAME_EN_MIDDLE;
+	public String getName_en_middle() {
+		return name_en_middle;
 	}
 
 	/**
-	 * @param nAME_EN_MIDDLE the nAME_EN_MIDDLE to set
+	 * @param name_en_middle the name_en_middle to set
 	 */
-	public void setNAME_EN_MIDDLE(String nAME_EN_MIDDLE) {
-		NAME_EN_MIDDLE = nAME_EN_MIDDLE;
+	public void setName_en_middle(String name_en_middle) {
+		this.name_en_middle = name_en_middle;
 	}
 
 	/**
-	 * @return the nAME_EN_LAST
+	 * @return the name_en_last
 	 */
-	public String getNAME_EN_LAST() {
-		return NAME_EN_LAST;
+	public String getName_en_last() {
+		return name_en_last;
 	}
 
 	/**
-	 * @param nAME_EN_LAST the nAME_EN_LAST to set
+	 * @param name_en_last the name_en_last to set
 	 */
-	public void setNAME_EN_LAST(String nAME_EN_LAST) {
-		NAME_EN_LAST = nAME_EN_LAST;
+	public void setName_en_last(String name_en_last) {
+		this.name_en_last = name_en_last;
 	}
 
 	/**
-	 * @return the eMAIL
+	 * @return the email
 	 */
-	public String getEMAIL() {
-		return EMAIL;
+	public String getEmail() {
+		return email;
 	}
 
 	/**
-	 * @param eMAIL the eMAIL to set
+	 * @param email the email to set
 	 */
-	public void setEMAIL(String eMAIL) {
-		EMAIL = eMAIL;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	/**
-	 * @return the tEL
+	 * @return the tel
 	 */
-	public String getTEL() {
-		return TEL;
+	public String getTel() {
+		return tel;
 	}
 
 	/**
-	 * @param tEL the tEL to set
+	 * @param tel the tel to set
 	 */
-	public void setTEL(String tEL) {
-		TEL = tEL;
+	public void setTel(String tel) {
+		this.tel = tel;
 	}
 
 	/**
-	 * @return the pASSWORD
+	 * @return the password
 	 */
-	public String getPASSWORD() {
-		return PASSWORD;
+	public String getPassword() {
+		return password;
 	}
 
 	/**
-	 * @param pASSWORD the pASSWORD to set
+	 * @param password the password to set
 	 */
-	public void setPASSWORD(String pASSWORD) {
-		PASSWORD = pASSWORD;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	/**
-	 * @return the sTATUS
+	 * @return the status
 	 */
-	public int getSTATUS() {
-		return STATUS;
+	public int getStatus() {
+		return status;
 	}
 
 	/**
-	 * @param sTATUS the sTATUS to set
+	 * @param status the status to set
 	 */
-	public void setSTATUS(int sTATUS) {
-		STATUS = sTATUS;
+	public void setStatus(int status) {
+		this.status = status;
 	}
 
 	/**
-	 * @return the cREATE_TIME
+	 * @return the create_time
 	 */
-	public String getCREATE_TIME() {
-		return CREATE_TIME;
+	public String getCreate_time() {
+		return create_time;
 	}
 
 	/**
-	 * @param cREATE_TIME the cREATE_TIME to set
+	 * @param create_time the create_time to set
 	 */
-	public void setCREATE_TIME(String cREATE_TIME) {
-		CREATE_TIME = cREATE_TIME;
+	public void setCreate_time(String create_time) {
+		this.create_time = create_time;
 	}
 
 	/**
-	 * @return the lOGIN_TIME
+	 * @return the login_time
 	 */
-	public String getLOGIN_TIME() {
-		return LOGIN_TIME;
+	public String getLogin_time() {
+		return login_time;
 	}
 
 	/**
-	 * @param lOGIN_TIME the lOGIN_TIME to set
+	 * @param login_time the login_time to set
 	 */
-	public void setLOGIN_TIME(String lOGIN_TIME) {
-		LOGIN_TIME = lOGIN_TIME;
+	public void setLogin_time(String login_time) {
+		this.login_time = login_time;
 	}
 
 	/**
-	 * @return the lAST_LOGIN_TIME
+	 * @return the last_login_time
 	 */
-	public String getLAST_LOGIN_TIME() {
-		return LAST_LOGIN_TIME;
+	public String getLast_login_time() {
+		return last_login_time;
 	}
 
 	/**
-	 * @param lAST_LOGIN_TIME the lAST_LOGIN_TIME to set
+	 * @param last_login_time the last_login_time to set
 	 */
-	public void setLAST_LOGIN_TIME(String lAST_LOGIN_TIME) {
-		LAST_LOGIN_TIME = lAST_LOGIN_TIME;
+	public void setLast_login_time(String last_login_time) {
+		this.last_login_time = last_login_time;
 	}
 
 	/**
-	 * @return the uPDATE_TIME
+	 * @return the update_time
 	 */
-	public String getUPDATE_TIME() {
-		return UPDATE_TIME;
+	public String getUpdate_time() {
+		return update_time;
 	}
 
 	/**
-	 * @param uPDATE_TIME the uPDATE_TIME to set
+	 * @param update_time the update_time to set
 	 */
-	public void setUPDATE_TIME(String uPDATE_TIME) {
-		UPDATE_TIME = uPDATE_TIME;
+	public void setUpdate_time(String update_time) {
+		this.update_time = update_time;
 	}
 
 	/**
-	 * @return the lOGIN_COUNT
+	 * @return the login_count
 	 */
-	public int getLOGIN_COUNT() {
-		return LOGIN_COUNT;
+	public int getLogin_count() {
+		return login_count;
 	}
 
 	/**
-	 * @param lOGIN_COUNT the lOGIN_COUNT to set
+	 * @param login_count the login_count to set
 	 */
-	public void setLOGIN_COUNT(int lOGIN_COUNT) {
-		LOGIN_COUNT = lOGIN_COUNT;
+	public void setLogin_count(int login_count) {
+		this.login_count = login_count;
 	}
 
 	/**
-	 * @return the gOLDEN_COIN
+	 * @return the golden_coin
 	 */
-	public int getGOLDEN_COIN() {
-		return GOLDEN_COIN;
+	public int getGolden_coin() {
+		return golden_coin;
 	}
 
 	/**
-	 * @param gOLDEN_COIN the gOLDEN_COIN to set
+	 * @param golden_coin the golden_coin to set
 	 */
-	public void setGOLDEN_COIN(int gOLDEN_COIN) {
-		GOLDEN_COIN = gOLDEN_COIN;
+	public void setGolden_coin(int golden_coin) {
+		this.golden_coin = golden_coin;
 	}
 
 	/**
-	 * @return the sILVER_COIN
+	 * @return the silver_coin
 	 */
-	public int getSILVER_COIN() {
-		return SILVER_COIN;
+	public int getSilver_coin() {
+		return silver_coin;
 	}
 
 	/**
-	 * @param sILVER_COIN the sILVER_COIN to set
+	 * @param silver_coin the silver_coin to set
 	 */
-	public void setSILVER_COIN(int sILVER_COIN) {
-		SILVER_COIN = sILVER_COIN;
+	public void setSilver_coin(int silver_coin) {
+		this.silver_coin = silver_coin;
 	}
 
-	
+
 }

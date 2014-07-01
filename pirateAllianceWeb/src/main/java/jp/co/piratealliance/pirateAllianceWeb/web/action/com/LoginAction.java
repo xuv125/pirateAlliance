@@ -21,8 +21,6 @@ public class LoginAction extends BaseAction {
 
 	public String userLogin()
 	{
-//		String email = "xing_lun@hotmail.com";
-//		String password = "12345678";
 		userInfoDto = userService.getUserInfo(this.email, this.password);
 		return SUCCESS;
 	}

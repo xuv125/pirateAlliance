@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 	public UserInfoDto getUserInfo(String email, String password) {
 		// TODO Auto-generated method stub
 		Map<String,String> paramMap = new HashMap<String,String>();
-		paramMap.put("EMAIL", email);
-		paramMap.put("PASSWORD", password);
+		paramMap.put("email", email);
+		paramMap.put("password", password);
 		return userDao.getUserInfo(paramMap);
 	}
 
