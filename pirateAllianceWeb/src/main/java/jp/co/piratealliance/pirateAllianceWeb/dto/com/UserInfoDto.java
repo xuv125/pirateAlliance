@@ -11,9 +11,9 @@ public class UserInfoDto {
 	
 	private String shop_id;
 	
-	private int golden_coin_id;
+	private String golden_coin_id;
 	
-	private int silver_coin_id;
+	private String silver_coin_id;
 	
 	private String account_id;
 	
@@ -84,28 +84,28 @@ public class UserInfoDto {
 	/**
 	 * @return the golden_coin_id
 	 */
-	public int getGolden_coin_id() {
+	public String getGolden_coin_id() {
 		return golden_coin_id;
 	}
 
 	/**
 	 * @param golden_coin_id the golden_coin_id to set
 	 */
-	public void setGolden_coin_id(int golden_coin_id) {
+	public void setGolden_coin_id(String golden_coin_id) {
 		this.golden_coin_id = golden_coin_id;
 	}
 
 	/**
 	 * @return the silver_coin_id
 	 */
-	public int getSilver_coin_id() {
+	public String getSilver_coin_id() {
 		return silver_coin_id;
 	}
 
 	/**
 	 * @param silver_coin_id the silver_coin_id to set
 	 */
-	public void setSilver_coin_id(int silver_coin_id) {
+	public void setSilver_coin_id(String silver_coin_id) {
 		this.silver_coin_id = silver_coin_id;
 	}
 
