@@ -40,4 +40,13 @@
 			<ref bean="goodsService" />
 		</property>
 	</bean>
+	
+	<!-- Push バッジをクリアーするAction -->
+	<bean id="clearDeviceBadgeAction"
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.ClearDeviceBadgeAction"
+		scope="prototype">
+		<property name="deviceService">
+			<ref bean="deviceService" />
+		</property>
+	</bean>
 </beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.com.DeviceDao">
+
+	<select id="setBadgeZero" parameterType="map"  resultType="int">
+		<![CDATA[
+		update TB_DEVICE_INFO TDI set TDI.badge = '0'
+		where TDI.DEVICE_TOKEN = #{device_token}
+		]]>
+	</select>
+</mapper>

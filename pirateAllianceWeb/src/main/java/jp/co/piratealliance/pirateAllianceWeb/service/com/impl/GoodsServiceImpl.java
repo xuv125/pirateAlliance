@@ -22,7 +22,7 @@ public class GoodsServiceImpl implements GoodsService {
 
 	public List<GoodsInfoDto> getGoodsList(String language_id) {
 		// TODO Auto-generated method stub
-		Map<String,String> paramMap = new HashMap<String,String>();
+		Map<String,Object> paramMap = new HashMap<String,Object>();
 		paramMap.put("language_id", language_id);
 		return goodsDao.selectGoods(paramMap);
 	}

@@ -14,5 +14,5 @@ import jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto;
 
 public interface GoodsDao {
 
-	public List<GoodsInfoDto> selectGoods(Map<String,String> param);
+	public List<GoodsInfoDto> selectGoods(Map<String,Object> param);
 }

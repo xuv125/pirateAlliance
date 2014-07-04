@@ -23,4 +23,11 @@
 			<ref bean="goodsDao"/>
 		</property>
 	</bean>
+	
+	<!-- Push バッジをクリアーするService-->
+	<bean id="deviceService" class="jp.co.piratealliance.pirateAllianceWeb.service.com.impl.DeviceServiceImpl">
+		<property name="deviceDao">
+			<ref bean="deviceDao"/>
+		</property>
+	</bean>
 </beans>

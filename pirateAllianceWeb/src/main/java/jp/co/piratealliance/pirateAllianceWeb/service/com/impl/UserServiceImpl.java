@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
 
 	public UserInfoDto getUserInfo(String email, String password) {
 		// TODO Auto-generated method stub
-		Map<String,String> paramMap = new HashMap<String,String>();
+		Map<String,Object> paramMap = new HashMap<String,Object>();
 		paramMap.put("email", email);
 		paramMap.put("password", password);
 		return userDao.selectUser(paramMap);

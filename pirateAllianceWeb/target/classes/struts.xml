@@ -55,4 +55,7 @@
 	
 	<!-- 商品一覧を取得する -->
 	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/GetGoodsListAction_struts.xml"/>
+	
+	<!-- Push バッジをクリアーする -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/ClearDeviceBadgeAction_struts.xml"/>
 </struts>
