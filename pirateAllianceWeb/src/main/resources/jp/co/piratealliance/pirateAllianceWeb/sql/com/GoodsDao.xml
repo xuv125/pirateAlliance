@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.com.GoodsDao">
+
+	<select id="selectGoods" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto">
+		<![CDATA[
+		select TG.*, TGA.* from TB_GOODS TG, TB_GOODS_AREA TGA, TB_M_LANGUAGE TML
+		where TG.GOODS_AREA_ID = TGA.GOODS_AREA_ID
+		and TGA.LANGUAGE_ID = TML.LANGUAGE_ID
+		and TML.LANGUAGE_ID = #{language_id}
+		]]>
+	</select>
+</mapper>
