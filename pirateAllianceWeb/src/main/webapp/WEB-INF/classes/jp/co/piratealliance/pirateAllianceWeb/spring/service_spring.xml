@@ -16,4 +16,11 @@
 			<ref bean="userDao"/>
 		</property>
 	</bean>
+	
+	<!-- 商品一覧を取得するService-->
+	<bean id="goodsService" class="jp.co.piratealliance.pirateAllianceWeb.service.com.impl.GoodsServiceImpl">
+		<property name="goodsDao">
+			<ref bean="goodsDao"/>
+		</property>
+	</bean>
 </beans>

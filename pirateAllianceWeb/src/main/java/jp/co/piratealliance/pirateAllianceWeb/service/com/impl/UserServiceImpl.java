@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
 		Map<String,String> paramMap = new HashMap<String,String>();
 		paramMap.put("email", email);
 		paramMap.put("password", password);
-		return userDao.getUserInfo(paramMap);
+		return userDao.selectUser(paramMap);
 	}
 
 	/**

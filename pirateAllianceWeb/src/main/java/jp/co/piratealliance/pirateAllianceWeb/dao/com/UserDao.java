@@ -13,5 +13,5 @@ import jp.co.piratealliance.pirateAllianceWeb.dto.com.UserInfoDto;
 
 public interface UserDao {
 
-	public UserInfoDto getUserInfo(Map<String,String> param);
+	public UserInfoDto selectUser(Map<String,String> param);
 }

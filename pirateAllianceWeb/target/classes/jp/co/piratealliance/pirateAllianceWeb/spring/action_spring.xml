@@ -24,11 +24,20 @@
 	</bean>
 
 	<!-- ユーザー認証Action -->
-	<bean id="login"
+	<bean id="loginAction"
 		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.LoginAction"
 		scope="prototype">
 		<property name="userService">
 			<ref bean="userService" />
+		</property>
+	</bean>
+	
+	<!-- 商品一覧を取得するAction -->
+	<bean id="getGoodsListAction"
+		class="jp.co.piratealliance.pirateAllianceWeb.web.action.com.GetGoodsListAction"
+		scope="prototype">
+		<property name="goodsService">
+			<ref bean="goodsService" />
 		</property>
 	</bean>
 </beans>

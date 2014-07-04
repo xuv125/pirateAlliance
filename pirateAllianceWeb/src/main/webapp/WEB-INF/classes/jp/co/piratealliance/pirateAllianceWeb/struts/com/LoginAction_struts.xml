@@ -8,7 +8,7 @@
 	<package name="login-package" extends="json-package" namespace="/com">
 
 		<!-- ユーザー認証 -->
-		<action name="output" class="login" method="output">
+		<action name="userLogin" class="loginAction" method="userLogin">
 			<result name="success" type="json">
 				<param name="root">userInfoDto</param>
 			</result>

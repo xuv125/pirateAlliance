@@ -52,4 +52,7 @@
 	
 	<!-- ユーザー認証 -->
 	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/LoginAction_struts.xml"/>
+	
+	<!-- 商品一覧を取得する -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/GetGoodsListAction_struts.xml"/>
 </struts>

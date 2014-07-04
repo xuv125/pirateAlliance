@@ -4,7 +4,7 @@
 
 <mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.com.UserDao">
 
-	<select id="getUserInfo" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.UserInfoDto">
+	<select id="selectUser" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.UserInfoDto">
 		<![CDATA[
 		select TMU.*, TSC.ACCOUNTBALANCE as SILVER_COIN, TGC.ACCOUNTBALANCE as GOLDEN_COIN from TB_M_USER as TMU 
 		left outer join (
@@ -12,7 +12,7 @@
 		) on (
 		TMU.SILVER_COIN_ID = TSC.SILVER_COIN_ID and 
 		TMU.GOLDEN_COIN_ID = TGC.GOLDEN_COIN_ID) 
-		where EMAIL=#{email} and PASSWORD=#{password};
+		where EMAIL=#{email} and PASSWORD=#{password}
 		]]>
 	</select>
 </mapper>

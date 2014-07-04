@@ -17,4 +17,12 @@
 			<ref bean="sqlSessionFactory" />
 		</property>
 	</bean>
+	
+	<bean id="goodsDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface"
+			value="jp.co.piratealliance.pirateAllianceWeb.dao.com.GoodsDao" />
+		<property name="sqlSessionFactory">
+			<ref bean="sqlSessionFactory" />
+		</property>
+	</bean>
 </beans>
