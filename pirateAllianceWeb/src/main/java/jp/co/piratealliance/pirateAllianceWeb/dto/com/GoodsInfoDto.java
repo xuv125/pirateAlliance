@@ -25,7 +25,7 @@ public class GoodsInfoDto {
 	
 	private String name;
 	
-	private String description;
+	private String descriptionx;
 	
 	private float price;
 	
@@ -160,17 +160,17 @@ public class GoodsInfoDto {
 	}
 
 	/**
-	 * @return the description
+	 * @return the descriptionx
 	 */
-	public String getDescription() {
-		return description;
+	public String getDescriptionx() {
+		return descriptionx;
 	}
 
 	/**
 	 * @param description the description to set
 	 */
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescriptionx(String descriptionx) {
+		this.descriptionx = descriptionx;
 	}
 
 	/**
