@@ -4,10 +4,10 @@
 
 <mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.com.DeviceDao">
 
-	<select id="setBadgeZero" parameterType="map"  resultType="int">
+	<update id="setBadgeZero" parameterType="map" >
 		<![CDATA[
 		update TB_DEVICE_INFO TDI set TDI.badge = '0'
 		where TDI.DEVICE_TOKEN = #{device_token}
 		]]>
-	</select>
+	</update>
 </mapper>
