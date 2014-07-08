@@ -11,4 +11,5 @@ public interface DeviceService {
 
 	Boolean clearDeviceBadge(String device_token);
 	
+	Boolean badgeAddOne(String device_token);
 }

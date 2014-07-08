@@ -29,6 +29,18 @@ public class DeviceServiceImpl implements DeviceService {
 		}
 		return result;
 	}
+	
+	public Boolean badgeAddOne(String device_token) {
+		// TODO Auto-generated method stub
+		Map<String,Object> paramMap = new HashMap<String,Object>();
+		paramMap.put("device_token", device_token);
+		int rows = deviceDao.badgeAddOne(paramMap);
+		Boolean result = false;
+		if (rows > 0) {
+			result = true;
+		}
+		return result;
+	}
 
 	/**
 	 * @return the deviceDao

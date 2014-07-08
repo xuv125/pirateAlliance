@@ -11,4 +11,6 @@ import java.util.Map;
 public interface DeviceDao {
 
 	public int setBadgeZero(Map<String,Object> param);
+	
+	public int badgeAddOne(Map<String,Object> param);
 }

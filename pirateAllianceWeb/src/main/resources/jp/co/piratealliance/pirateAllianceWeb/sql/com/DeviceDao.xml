@@ -10,4 +10,11 @@
 		where TDI.DEVICE_TOKEN = #{device_token}
 		]]>
 	</update>
+	
+	<update id="badgeAddOne" parameterType="map" >
+		<![CDATA[
+		update TB_DEVICE_INFO TDI set TDI.badge = TDI.badge + 1
+		where TDI.DEVICE_TOKEN = #{device_token}
+		]]>
+	</update>
 </mapper>
