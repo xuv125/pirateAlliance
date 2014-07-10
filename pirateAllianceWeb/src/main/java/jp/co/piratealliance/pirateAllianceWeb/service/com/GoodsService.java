@@ -13,6 +13,6 @@ import jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto;
 */
 public interface GoodsService {
 
-	List<GoodsInfoDto> getGoodsList(String language_id);
+	List<GoodsInfoDto> getGoodsList(String language);
 	
 }

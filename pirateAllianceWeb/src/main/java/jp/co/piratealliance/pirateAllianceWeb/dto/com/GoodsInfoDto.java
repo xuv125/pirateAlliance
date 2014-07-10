@@ -11,9 +11,7 @@ public class GoodsInfoDto {
 	
 	private String goodstype_id;
 
-	private String goods_area_id;
-	
-	private String language_id;
+	private String area_id;
 	
 	private int status;
 	
@@ -62,31 +60,17 @@ public class GoodsInfoDto {
 	}
 
 	/**
-	 * @return the goods_area_id
+	 * @return the area_id
 	 */
-	public String getGoods_area_id() {
-		return goods_area_id;
+	public String getArea_id() {
+		return area_id;
 	}
 
 	/**
-	 * @param goods_area_id the goods_area_id to set
+	 * @param area_id the area_id to set
 	 */
-	public void setGoods_area_id(String goods_area_id) {
-		this.goods_area_id = goods_area_id;
-	}
-	
-	/**
-	 * @return the language_id
-	 */
-	public String getLanguage_id() {
-		return language_id;
-	}
-
-	/**
-	 * @param language_id the language_id to set
-	 */
-	public void setLanguage_id(String language_id) {
-		this.language_id = language_id;
+	public void setArea_id(String area_id) {
+		this.area_id = area_id;
 	}
 
 	/**
@@ -167,7 +151,7 @@ public class GoodsInfoDto {
 	}
 
 	/**
-	 * @param description the description to set
+	 * @param descriptionx the descriptionx to set
 	 */
 	public void setDescriptionx(String descriptionx) {
 		this.descriptionx = descriptionx;
@@ -214,6 +198,6 @@ public class GoodsInfoDto {
 	public void setGoods_img(String goods_img) {
 		this.goods_img = goods_img;
 	}
-	
-	
+
+
 }
