@@ -20,10 +20,10 @@ public class GoodsServiceImpl implements GoodsService {
 	
 	private GoodsDao goodsDao;
 
-	public List<GoodsInfoDto> getGoodsList(String language) {
+	public List<GoodsInfoDto> getGoodsList(String language_id) {
 		// TODO Auto-generated method stub
 		Map<String,Object> paramMap = new HashMap<String,Object>();
-		paramMap.put("language", language);
+		paramMap.put("language_id", language_id);
 		return goodsDao.selectGoods(paramMap);
 	}
 

@@ -18,11 +18,11 @@ public class GetGoodsListAction extends BaseAction {
 	
 	private List<GoodsInfoDto> goodsList;
 	
-	private String language;
+	private String language_id;
 
 	public String getGoodsInfoList()
 	{
-		goodsList = goodsService.getGoodsList(this.language);
+		goodsList = goodsService.getGoodsList(this.language_id);
 		return SUCCESS;
 	}
 
@@ -41,20 +41,6 @@ public class GetGoodsListAction extends BaseAction {
 	}
 
 	/**
-	 * @return the language
-	 */
-	public String getLanguage() {
-		return language;
-	}
-
-	/**
-	 * @param language the language to set
-	 */
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	/**
 	 * @return the goodsList
 	 */
 	public List<GoodsInfoDto> getGoodsList() {
@@ -68,5 +54,18 @@ public class GetGoodsListAction extends BaseAction {
 		this.goodsList = goodsList;
 	}
 
+	/**
+	 * @return the language_id
+	 */
+	public String getLanguage_id() {
+		return language_id;
+	}
+
+	/**
+	 * @param language_id the language_id to set
+	 */
+	public void setLanguage_id(String language_id) {
+		this.language_id = language_id;
+	}
 
 }

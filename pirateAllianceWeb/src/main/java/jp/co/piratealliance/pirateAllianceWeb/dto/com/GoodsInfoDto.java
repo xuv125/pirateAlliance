@@ -21,6 +21,8 @@ public class GoodsInfoDto {
 	
 	private Boolean is_new;
 	
+	private String language_id;
+	
 	private String name;
 	
 	private String descriptionx;
@@ -130,6 +132,20 @@ public class GoodsInfoDto {
 	}
 
 	/**
+	 * @return the language_id
+	 */
+	public String getLanguage_id() {
+		return language_id;
+	}
+
+	/**
+	 * @param language_id the language_id to set
+	 */
+	public void setLanguage_id(String language_id) {
+		this.language_id = language_id;
+	}
+
+	/**
 	 * @return the name
 	 */
 	public String getName() {
@@ -198,6 +214,5 @@ public class GoodsInfoDto {
 	public void setGoods_img(String goods_img) {
 		this.goods_img = goods_img;
 	}
-
 
 }

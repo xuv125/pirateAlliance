@@ -6,10 +6,9 @@
 
 	<select id="selectGoods" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto">
 		<![CDATA[
-		select TG.*, TRGA.* from TB_GOODS TG, TB_M_AREA TMA, TB_R_GOODS_AREA TRGA
-		where TMA.AREA_ID = TRGA.AREA_ID
-		and TRGA.GOODS_ID = TG.GOODS_ID
-		and TMA.LANGUAGE = #{language}
+		select * from TB_GOODS TG, TB_R_GOODS_LANGUAGE TRGL
+		where TRGL.GOODS_ID = TG.GOODS_ID
+		and TRGL.LANGUAGE_ID = #{language_id}
 		]]>
 	</select>
 </mapper>
