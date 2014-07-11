@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import jp.co.piratealliance.pirateAllianceWeb.dao.com.GoodsDao;
+import jp.co.piratealliance.pirateAllianceWeb.dto.com.AreaInfoDto;
 import jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto;
 import jp.co.piratealliance.pirateAllianceWeb.service.com.GoodsService;
 
@@ -25,6 +26,14 @@ public class GoodsServiceImpl implements GoodsService {
 		Map<String,Object> paramMap = new HashMap<String,Object>();
 		paramMap.put("language_id", language_id);
 		return goodsDao.selectGoods(paramMap);
+	}
+	
+	public List<AreaInfoDto> getAreaList(String language_id, int level) {
+		// TODO Auto-generated method stub
+		Map<String,Object> paramMap = new HashMap<String,Object>();
+		paramMap.put("language_id", language_id);
+		paramMap.put("level", level);
+		return goodsDao.selectArea(paramMap);
 	}
 
 	/**

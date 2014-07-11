@@ -4,11 +4,22 @@
 
 <mapper namespace="jp.co.piratealliance.pirateAllianceWeb.dao.com.GoodsDao">
 
+	<!-- 商品情報を取る -->
 	<select id="selectGoods" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto">
 		<![CDATA[
 		select * from TB_GOODS TG, TB_R_GOODS_LANGUAGE TRGL
 		where TRGL.GOODS_ID = TG.GOODS_ID
 		and TRGL.LANGUAGE_ID = #{language_id}
+		]]>
+	</select>
+	
+	<!-- 地域情報を取る -->
+	<select id="selectArea" parameterType="map"  resultType="jp.co.piratealliance.pirateAllianceWeb.dto.com.AreaInfoDto">
+		<![CDATA[
+		select * from TB_M_AREA TMA, TB_R_AREA_LANGUAGE TRAL
+		where TRAL.AREA_ID = TMA.AREA_ID
+		and TRAL.LANGUAGE_ID = #{language_id}
+		and TMA.LEVEL = #{level}
 		]]>
 	</select>
 </mapper>

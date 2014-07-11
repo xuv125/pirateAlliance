@@ -13,6 +13,13 @@
 				<param name="root">goodsList</param>
 			</result>
 		</action>
+		
+		<!-- 地域一覧を取る -->
+		<action name="getAreaInfoList" class="getAreaListAction" method="getAreaInfoList">
+			<result name="success" type="json">
+				<param name="root">areaList</param>
+			</result>
+		</action>
 
 	</package>
 </struts>

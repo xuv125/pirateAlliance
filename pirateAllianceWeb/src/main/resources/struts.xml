@@ -50,12 +50,12 @@
 	<!-- test -->
 	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/test/JsonTestAction_struts.xml"></include>
 	
-	<!-- ユーザー認証 -->
-	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/LoginAction_struts.xml"/>
+	<!-- ユーザー -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/UserAction_struts.xml"/>
 	
-	<!-- 商品一覧を取得する -->
-	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/GetGoodsListAction_struts.xml"/>
+	<!-- 商品 -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/GoodsAction_struts.xml"/>
 	
-	<!-- Push バッジをクリアーする -->
-	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/ClearDeviceBadgeAction_struts.xml"/>
+	<!-- 端末 -->
+	<include file="jp/co/piratealliance/pirateAllianceWeb/struts/com/DeviceAction_struts.xml"/>
 </struts>

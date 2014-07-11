@@ -3,6 +3,7 @@ package jp.co.piratealliance.pirateAllianceWeb.dao.com;
 import java.util.List;
 import java.util.Map;
 
+import jp.co.piratealliance.pirateAllianceWeb.dto.com.AreaInfoDto;
 import jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto;
 
 
@@ -15,4 +16,6 @@ import jp.co.piratealliance.pirateAllianceWeb.dto.com.GoodsInfoDto;
 public interface GoodsDao {
 
 	public List<GoodsInfoDto> selectGoods(Map<String,Object> param);
+	
+	public List<AreaInfoDto> selectArea(Map<String,Object> param);
 }
